@@ -24,6 +24,10 @@ namespace IllusionInjector.Updating
             InternalName = "beatsaber-ipa-reloaded"
         };
 
+        public bool ValidForScoreUse => true;
+
+        public string NoScoreReason => "";
+
         public void OnActiveSceneChanged(Scene prevScene, Scene nextScene)
         {
         }

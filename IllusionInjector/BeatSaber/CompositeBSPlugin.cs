@@ -87,6 +87,10 @@ namespace IllusionInjector {
 
         public ModsaberModInfo ModInfo => throw new NotImplementedException();
 
+        public bool ValidForScoreUse => throw new NotImplementedException();
+
+        public string NoScoreReason => throw new NotImplementedException();
+
         public void OnLateUpdate() {
             Invoke(plugin => {
                 if (plugin is IEnhancedBeatSaberPlugin)

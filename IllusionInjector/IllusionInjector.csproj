@@ -63,7 +63,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>..\..\..\..\..\..\Game Library\Steam\steamapps\common\Beat Saber\Beat Saber_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>E:\Steam\SteamApps\common\Beat Saber\Beat Saber_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

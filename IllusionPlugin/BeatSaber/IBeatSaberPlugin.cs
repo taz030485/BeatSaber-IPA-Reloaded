@@ -29,6 +29,17 @@ namespace IllusionPlugin
         ModsaberModInfo ModInfo { get; }
 
         /// <summary>
+        /// Gets whether the plugin allows for leaderboard use
+        /// </summary>
+        bool ValidForScoreUse { get; }
+
+        /// <summary>
+        /// Gets the reason scores are not used and is combined with other plugin reasons
+        /// eg: "NO FAIL"
+        /// </summary>
+        string NoScoreReason { get; }
+
+        /// <summary>
         /// Gets invoked when the application is started.
         /// </summary>
         void OnApplicationStart();

@@ -36,17 +36,44 @@
     <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\Steam\SteamApps\common\Beat Saber\Beat Saber_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TextMeshPro-1.0.55.2017.1.0b12">
+      <HintPath>E:\Steam\SteamApps\common\Beat Saber\Beat Saber_Data\Managed\TextMeshPro-1.0.55.2017.1.0b12.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>E:\Steam\SteamApps\common\Beat Saber\Beat Saber_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\Libs\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:\Steam\SteamApps\common\Beat Saber\Beat Saber_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>E:\Steam\SteamApps\common\Beat Saber\Beat Saber_Data\Managed\UnityEngine.UIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BeatSaber\IEnhancedBeatSaberPlugin.cs" />
     <Compile Include="BeatSaber\ModsaberModInfo.cs" />
+    <Compile Include="BSUI\BeatSaberUI.cs" />
+    <Compile Include="BSUI\SettingsUI\SettingsUI.cs" />
+    <Compile Include="BSUI\SettingsUI\BoolViewController.cs" />
+    <Compile Include="BSUI\SettingsUI\ListViewController.cs" />
+    <Compile Include="BSUI\SettingsUI\SubMenu.cs" />
+    <Compile Include="Utils\TableViewHelper.cs" />
+    <Compile Include="Utils\BSSceneManager.cs" />
     <Compile Include="IniFile.cs" />
     <Compile Include="BeatSaber\IBeatSaberPlugin.cs" />
     <Compile Include="IPA\IEnhancedPlugin.cs" />
@@ -58,6 +85,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\ReflectionUtil.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
