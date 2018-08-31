@@ -35,7 +35,7 @@ namespace IllusionPlugin
 
         /// <summary>
         /// Gets the reason scores are not used and is combined with other plugin reasons
-        /// eg: "NO FAIL"
+        /// eg: "<color=#00AAFF>NO FAIL</color>"
         /// </summary>
         string NoScoreReason { get; }
 

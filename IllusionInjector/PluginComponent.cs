@@ -30,8 +30,6 @@ namespace IllusionInjector
             //gameObject.AddComponent<ModUpdater>(); // AFTER plugins are loaded, but before most things
             gameObject.AddComponent<Updating.ModsaberML.Updater>();
             gameObject.AddComponent<IllusionPlugin.Utils.BSSceneManager>();
-            gameObject.AddComponent<IllusionPlugin.BSUI.BeatSaberUI>();
-            gameObject.AddComponent<IllusionPlugin.BSUI.SettingsUI.SettingsUI>();
 
             bsPlugins.OnApplicationStart();
             ipaPlugins.OnApplicationStart();
@@ -83,7 +81,7 @@ namespace IllusionInjector
                 if (!plugin.ValidForScoreUse)
                 {
                     if (!string.IsNullOrEmpty(text)) { text += " ,"; };
-                    text += "<color=#00AAFF>" + plugin.NoScoreReason + "</color>";
+                    text += plugin.NoScoreReason;
                 }
             }
 
